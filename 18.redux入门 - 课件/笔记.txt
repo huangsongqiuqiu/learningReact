@@ -1,0 +1,73 @@
+redux
+
+中文网：http://www.redux.org.cn/
+英文官网：https://redux.js.org/
+
+redux = 状态管理器 
+- 函数 Reducer（state，action）
+外界去找这个函数 就可以了
+
+state -> constructor 
+this.props......
+<Com/> state={index:0}
+<div>
+	<Leo msg={this.state.index}/>
+</div>
+
+
+<Leo/> this.props.msg
+
+<div>
+	<Sky msg={this.props.msg}/>
+</div>
+
+
+<Sky>
+	this.props.msg
+
+
+不如 专门在外面放一个 总状态
+所有的人 如果用这个状态 就直接拿就可以了
+
+组件   -   数据
+
+官方推荐的小例子：
+githup 搜索 redux  download zip
+
+cd cnpm i
+examples - cnpm i
+npm start
+
+ 
+redux
+Reducer - 函数
+	数据state 操作数据action
+Store - 保存数据的地方 外界唯一能和action 交流的地方
+				|  Reducer - 函数里面的两个参数|
+app.js store -> action          -> state    - ui-{数据变化}
+
+store -> Reducer(state,action) action - state-> ui
+
+action 标记type
+
+store 只允许有一个
+
+replaceReducer - > 更换一个 数据源
+dispatch -> action 交流的函数
+getState -> 获取状态
+
+setState -> 从新渲染
+subscribe 用它去渲染 <-> 只需要监听你的render
+
+store.dispatch -> action -> state
+
+Reducer - 纯函数 计算
+store -> action -> state 
+			Reducer
+Reducer 整理 <->
+
+state
+action
+Reducer
+
+

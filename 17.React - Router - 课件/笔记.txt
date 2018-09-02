@@ -1,0 +1,60 @@
+router - SPA - 单页面应用
+提高用户体验
+
+弱点：
+不利于SEO优化
+
+angular vue react
+
+首页 新闻页 关于我
+
+
+react-router - 官网
+https://reacttraining.com/react-router/
+
+第一步 下载router
+cnpm i react-router-dom
+使用方式
+引入
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+<Router>
+	<div>
+		<Link to='/地址'>文字</Link>
+		<Route path='/地址' component={组件名称}>
+	</div> --  只允许放一个根元素
+</Router>
+
+
+严格匹配 exact
+
+最好的想法
+
+并不是 一个 link 对应 一个 route
+一堆link 对应 一个 route
+也就是说 link to 后面的不同内容 让一个组件显示不同的结果
+to 就是一个变量
+router path='/news/:变量名'
+
+class -> this.props.match
+
+箭头函数 -> const App = ({match}) =>{
+	
+} 
+
+function App(match){
+	
+}
+
+面试题 - 无限调用router
+避免无限回调
+
+npm run build 打包
+
+服务器上运行
+
+
+
+
+
+

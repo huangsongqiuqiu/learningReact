@@ -1,0 +1,51 @@
+*{margin:0;padding: 0;list-style: none;}
+.myInput{width: 200px;height: 40px;line-height: 40px;border:1px solid black;border-radius: 5px;outline: none;margin: 50px;text-indent: 10px;font-size: 26px;background: #ccc;transition:0.3s;}
+.active{width: 250px;color: red;border-color: blue;box-shadow: 0 0 5px blue;background: orange;}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.tab{
+  width: 960px;height: 480px;position: relative;overflow: hidden;
+}
+.tab ul{height: 100%;position: absolute;left: 0;top: 0;transition:.3s;}
+.tab ul li{height: 100%;width: 960px;float: left;}
+.tab ul li img{width: 100%;height: 100%;}
+
+.tab ol{z-index: 20;position: absolute;left: 50%;transform:translateX(-50%);bottom:6px;}
+
+.tab ol li{float: left;width: 8px;height: 8px;background: white;cursor: pointer;margin:0 5px;border-radius: 50%; transform: scale(1);transition:.3s;}
+
+.tab ol li.active{transform: scale(2)}
+.left{width: 50px;height: 100%;z-index: 30;background: rgba(0,0,0,0.5);position: absolute;left: 0;top: 0;}
+.left:after{content: '';width: 14px;height: 5px;background: white;position: absolute;left: 50%;top: 50%;transform:translate(-50%,-50%) rotate(45deg);transform-origin: left center}
+.left:before{content: '';width: 14px;height: 5px;background: white;position: absolute;left: 50%;top: 50.5%;transform:translate(-50%,-50%) rotate(-45deg);transform-origin: left center}
+
+
+.right{width: 50px;height: 100%;z-index: 30;background: rgba(0,0,0,0.5);position: absolute;right: 0;top: 0;transform:scale(-1);}
+.right:after{content: '';width: 14px;height: 5px;background: white;position: absolute;left: 50%;top: 50%;transform:translate(-50%,-50%) rotate(45deg);transform-origin: left center}
+.right:before{content: '';width: 14px;height: 5px;background: white;position: absolute;left: 50%;top: 50.5%;transform:translate(-50%,-50%) rotate(-45deg);transform-origin: left center}
+
+.line{width: 20%;height: 10px;position: absolute;top: 0;left: 0;background: rgba(255,255,255,0.7);z-index: 50;}

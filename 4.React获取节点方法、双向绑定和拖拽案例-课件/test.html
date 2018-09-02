@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src='bower_components/react/react.js'></script>
+    <script type="text/javascript" src='bower_components/react/react-dom.js'></script>
+    <script type="text/javascript" src='bower_components/babel/browser.js'></script>
+</head>
+
+<body>
+<div id='app'></div>
+<script type="text/babel">
+    class Drag extends React.Component{
+        constructor(){
+            super();
+            this.state={
+                msg:3,
+            }
+         }
+         change(){
+            this.setState(
+                {
+                    msg:this.state.msg+1,
+                }
+            )
+         }
+         render(){
+                return(<div>
+                            <input type='button' onClick={this.change.bind(this)} defaultValue='123'/>
+                            <div>{this.state.msg}</div>
+                        </div>
+                )
+        }
+    }
+
+   ReactDOM.render(<Drag/>,app)
+</script>
+</body>
+</html>

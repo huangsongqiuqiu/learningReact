@@ -1,0 +1,48 @@
+react-动画
+
+react-本身并不提供动画
+
+css transition 
+定时器
+
+input 获取焦点 失去焦点
+获取焦点的时候 变长一点
+
+myInput active
+
+react-transition-group
+
+vue-2.x 动画 
+1.x版本
+
+innerHTML
+<style>
+input{width:200px;height:100px;}
+</style>
+dangerouslySetInnerHTML={{__html:'<div></div>'}}相当于innerHTML
+
+<div dangerouslySetInnerHTML={{__html:'<div></div>'}}></div>
+
+<div><div></div></div>
+
+哪个东西要用动画 就用 CSSTransitionGroup标签包起来
+出场动画
+transitionName='leo' 自定义的类名
+transitionEnterTimeout 可以限定 动画入场时间 如果超过了你给的参数 那么将直接变成 leo-enter-active的样式
+.leo-enter{} 进入之前的样式
+.leo-enter-active{} 进入之后的样式
+.leo-leave{} 离开时的样式
+.leo-leave-enter{} 离开之后的样式
+
+
+react-motion
+
+import {Motion, spring} from 'react-motion';
+<Motion style={{参数:spring(计算值)}}>
+	{({参数})=>
+
+		jsx
+	}
+</Motion>
+
+

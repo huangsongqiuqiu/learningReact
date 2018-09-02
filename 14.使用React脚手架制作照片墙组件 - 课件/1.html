@@ -1,0 +1,29 @@
+<!doctype html> 
+<html> 
+<head> 
+    <meta charset="utf-8"> 
+    <title></title> 
+    <style>
+    	.outNode{width: 200px;height: 200px;position: absolute;left:calc(50% - 100px); top:calc(50% - 100px);border:1px solid black;
+    		transform:perspective(800px) rotateY(0deg);
+    		transition:.7s;
+    		transform-style:preserve-3d;
+    	}
+    	.outNode:active{
+    		transform:perspective(800px) rotateY(180deg);
+    	}
+    	.zm{width: 100%;height: 100%;background: red;position: absolute;left: 0;top: 0;
+    		transform:translateZ(1px);
+    	}
+    	.bm{width: 100%;height: 100%;background: green;left:0;top: 0;
+    		transform:translateZ(-1px);
+    	}
+    </style>
+</head>
+<body>
+<div class='outNode'>
+	<div class='zm'></div>
+	<div class='bm'></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+官网 - 蚂蚁金服 - 阿里巴巴
+http://design.alipay.com/
+
+create-react-app xxxx
+
+cnpm install antd
+import { DatePicker } from 'antd';
+import 'antd/dist/antd.css';

@@ -1,0 +1,45 @@
+ui - 更方便 更快捷的去搭建网站
+bootstrape - 经典ui框架
+
+官网： http://www.material-ui.com/
+material - ui
+
+react - material / element / ant
+
+如何使用：
+https://www.npmjs.com/package/material-ui
+
+npm install material-ui
+
+只要是 material 的内容的东西都放在
+MuiThemeProvider 标签下
+
+Components - 所有的组件
+
+App Bar - 导航栏 都会有
+Auto Complete - 自动提示下拉菜单
+Avatar - 头像信息
+Badge - 徽章（提示信息）
+Bottom Navigation - 底部菜单
+Buttons - 按钮
+Card - 卡片 （一个内容区域）
+Chip - 碎片
+Date Picker - 日历
+Dialog - 警告框（模态框）
+Divider - 分割线
+Drawer - 抽屉 
+Grid List - 图片组
+Icon - 图标
+List - 列表
+Menu - 菜单
+Paper - 纸
+popover - 脆薄空心松饼
+Progress - 进度
+Select Field - 选择框
+Slider - 拉动条
+Checkbox 
+
+里面的样式 是允许改动的 有接口 都在下面
+
+需要什么 引什么就可以 
+如果组件多 有一个根标签即可

@@ -1,0 +1,50 @@
+react - 脚手架
+webpack - 配置 相当麻烦
+配置麻烦 用起来爽
+
+脚手架-人家帮咱们配置好了 就差咱们自己写身体的部分
+
+环境 - 先安装node
+node<-
+
+安装
+(c)npm install -g create-react-app
+
+验证
+create-react-app --version
+
+如果告诉你版本号了
+这事安装成功了
+
+如何使用
+create-react-app myleo
+
+public - index.html root html
+
+src - app.js <-所有的组件 往里面扔
+app.js 汇总组件-> index.js 渲染-> index.html
+
+图片展示tab
+<Tab/>
+
+<div>
+	<ul>
+		<li><img src=></li>
+	</ul>
+	<ol>
+	</ol>
+</div>
+
+
+tabJson = {
+	picUrl:['1.jpeg','2.jpeg','3.jpeg'],
+	timer:2000
+}
+
+
+
+
+
+
+
+
